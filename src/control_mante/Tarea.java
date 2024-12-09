@@ -11,13 +11,13 @@ package control_mante;
 public class Tarea {
     
     private String nombreTarea;
-    private int tipoMantenimiento;
+    private String tipoMantenimiento;
     private String maquina;
     private String fecha;
-    private int estadoTarea;
+    private String estadoTarea;
     private String responsable;
     
-    public Tarea(String nombreTarea, int tipoMantenimiento, String maquina, String fecha, int estadoTarea, String responsable){
+    public Tarea(String nombreTarea, String tipoMantenimiento, String maquina, String fecha, String estadoTarea, String responsable){
         this.nombreTarea = nombreTarea;
         this.tipoMantenimiento = tipoMantenimiento;
         this.maquina = maquina;
@@ -34,11 +34,11 @@ public class Tarea {
         this.nombreTarea = nombreTarea;
     }
 
-    public int getTipoMantenimiento() {
+    public String getTipoMantenimiento() {
         return tipoMantenimiento;
     }
 
-    public void setTipoMantenimiento(int tipoMantenimiento) {
+    public void setTipoMantenimiento(String tipoMantenimiento) {
         this.tipoMantenimiento = tipoMantenimiento;
     }
 
@@ -58,11 +58,11 @@ public class Tarea {
         this.fecha = fecha;
     }
 
-    public int getEstadoTarea() {
+    public String getEstadoTarea() {
         return estadoTarea;
     }
 
-    public void setEstadoTarea(int estadoTarea) {
+    public void setEstadoTarea(String estadoTarea) {
         this.estadoTarea = estadoTarea;
     }
 
